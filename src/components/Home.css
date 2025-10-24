@@ -119,3 +119,42 @@
   left: -50px; /* Peeks in from the left */
   top: 40px;   /* Peeks in from the top */
 }
+
+@media (max-width: 768px) {
+  .home-container {
+    height: auto; /* Let height be automatic */
+    padding-top: 60px; /* Add space from top */
+    padding-bottom: 60px;
+  }
+  
+  .home-content {
+    flex-direction: column-reverse; /* Stacks image on top, text below */
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 3.5rem; /* Smaller text */
+  }
+
+  .home-name {
+    font-size: 1.5rem;
+  }
+
+  .home-headline {
+    font-size: 1rem;
+  }
+
+  .home-socials {
+    justify-content: center; /* Center the GitHub/LinkedIn links */
+  }
+
+  .home-socials a {
+    margin: 0 15px; /* Adjust spacing */
+  }
+
+  .home-image-wrapper {
+    width: 300px; /* Smaller picture */
+    height: 300px;
+    margin-bottom: 30px; /* Space between pic and text */
+  }
+}

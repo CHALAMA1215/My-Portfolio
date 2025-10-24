@@ -242,3 +242,40 @@
     margin-top: 30px;
   }
 }
+/* --- CONFIRM THIS IS AT THE END of Projects.css --- */
+
+@media (max-width: 768px) {
+  .project-content-wrapper {
+    flex-direction: column; /* Stack images and text vertically on small screens */
+  }
+
+  /* Reset order for alternating layout */
+  .projects-grid-container > .project-layout-item:nth-child(even) .project-content-wrapper {
+      flex-direction: column;
+  }
+
+  .project-images-column {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .project-detail-images {
+    justify-content: center; /* Center detail images on small screens */
+    margin-top: 20px; /* Adjust overlap */
+  }
+
+  .project-main-image {
+    max-height: 250px;
+  }
+
+  .project-detail-image {
+    width: 150px;
+    height: 110px;
+  }
+
+  .project-card-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+}

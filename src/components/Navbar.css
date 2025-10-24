@@ -42,3 +42,20 @@
 .nav-item a:hover {
   color: var(--accent-color); /* Orange hover */
 }
+/* --- ADD THIS AT THE END of Navbar.css --- */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and links */
+    padding: 15px;
+  }
+
+  .nav-logo {
+    margin-bottom: 10px; /* Space between logo and links */
+  }
+
+  .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

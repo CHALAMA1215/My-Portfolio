@@ -167,3 +167,38 @@
   transform: translate(-50%, -50%); /* Center it */
   z-index: 0;
 }
+/* --- ADD THIS AT THE END of Education.css --- */
+
+@media (max-width: 768px) {
+  .education-content-wrapper {
+    flex-direction: column; /* Stack text and images */
+  }
+
+  .education-left h2 {
+    text-align: center; /* Center the "Education" title */
+    font-size: 2.5rem;
+  }
+
+  .education-right {
+    min-height: 300px; /* Give images some space */
+    padding-top: 40px;
+  }
+
+  .education-image-1,
+  .education-image-2 {
+    width: 200px; /* Smaller images */
+    height: 140px;
+  }
+
+  .education-image-1 {
+    top: 0;
+    left: 10%;
+    transform: rotate(-5deg);
+  }
+
+  .education-image-2 {
+    bottom: 0;
+    right: 10%;
+    transform: rotate(5deg);
+  }
+}

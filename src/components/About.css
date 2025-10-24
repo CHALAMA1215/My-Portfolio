@@ -37,3 +37,20 @@
   margin: 0 auto;
 }
 */
+/* --- ADD THIS AT THE END of About.css --- */
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack text and image */
+  }
+
+  .about-text {
+    text-align: center; /* Center text */
+  }
+
+  .about-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+  }
+}
