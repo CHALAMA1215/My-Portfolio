@@ -1,0 +1,39 @@
+.about-section h2 {
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 2; /* Takes up 2/3 of the space */
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1; /* Takes up 1/3 of the space */
+  max-width: 250px;
+  border-radius: 50%; /* Makes it a circle like the template */
+  object-fit: cover;
+}
+
+/* --- Uncomment this if you DON'T use an image ---
+.about-text {
+  width: 100%;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+*/

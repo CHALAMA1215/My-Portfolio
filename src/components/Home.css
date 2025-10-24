@@ -1,0 +1,121 @@
+/* 1. Make the section a positioning "anchor" */
+.home-container {
+  position: relative; /* This is crucial for background shapes! */
+  overflow: hidden; /* Hides shapes that go off-screen */
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* 2. Wrapper for your text and image */
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  z-index: 2; /* Puts content above background shapes */
+  position: relative; /* Needs to be relative for z-index */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-text {
+  flex: 1; /* Takes up half the space */
+  text-align: left;
+}
+
+.home-title {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.home-name {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+.home-headline {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.home-socials {
+  margin-top: 30px;
+}
+
+.home-socials a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 25px; /* Spaced out to the right */
+}
+
+.home-socials a:hover {
+  color: var(--accent-color);
+}
+
+/* 3. Style the profile picture */
+.home-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align the image to the bottom of the wrapper */
+  
+  /* Make the wrapper the circular element */
+  width: 350px; /* Same as profile-pic width */
+  height: 350px; /* Same as profile-pic height */
+  border-radius: 50%; /* Make the wrapper itself circular */
+  overflow: hidden; /* Crucial: crops anything outside this circle */
+  position: relative; /* For positioning the image inside */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 8px solid white; /* White border on the circular wrapper */
+}
+
+.profile-pic {
+  /* No fixed width/height or border-radius here anymore */
+  width: 100%; /* Take full width of its circular wrapper */
+  height: 100%; /* <-- Make this taller (e.g., 130%) to show more hair */
+  object-fit: cover;
+  object-position: center top; /* Focuses the crop on the top */
+  
+  /* We removed the conflicting margin-top */
+}
+
+/* --- 4. THE BACKGROUND SHAPES --- */
+
+/* The big orange circle from the template */
+.shape-circle-orange {
+  position: absolute; /* Takes it out of the normal flow */
+  z-index: 1; /* Sits behind the content (z-index: 2) */
+  width: 400px;
+  height: 400px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  right: -80px;  /* Peeks in from the right */
+  bottom: -80px; /* Peeks in from the bottom */
+}
+
+/* The faint curve from the template */
+.shape-curve-faint {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  border: 10px solid var(--light-gray); /* Faint border */
+  border-radius: 50%;
+  left: -50px; /* Peeks in from the left */
+  top: 40px;   /* Peeks in from the top */
+}

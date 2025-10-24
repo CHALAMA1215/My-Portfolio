@@ -1,13 +1,42 @@
+/* 1. Import Montserrat from Google Fonts (a great Gotham alternative) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* Define our color palette */
+:root {
+  --bg-color: #FFFFFF;
+  --text-color: #333333;
+  --accent-color: #FF6B00; /* A bright, modern orange */
+  --light-gray: #F9F9F9;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* 2. Apply the new font family to the entire site */
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Base style for all sections */
+section {
+  padding: 80px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--light-gray);
+  scroll-margin-top: 80px; /* Offset for sticky navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  /* 3. We'll use a heavier weight for headings to match that bold Gotham look */
+  font-weight: 700; 
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--text-color);
 }
