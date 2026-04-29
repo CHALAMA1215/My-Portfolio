@@ -2,9 +2,9 @@ import React from 'react';
 import './Projects.css';
 
 // Project 1 Images
-import project1Main from '../assets/project1-main.png';
-import project1Detail1 from '../assets/project1-detail1.png';
-import project1Detail2 from '../assets/project1-detail2.png';
+import project1Main from '../assets/driver.jpg';
+import project1Detail1 from '../assets/passenger.jpg';
+import project1Detail2 from '../assets/admin.jpg';
 
 // Project 3 Images (We skip 2 to match your Music Genre Classification images)
 import project3Main from '../assets/project3-main.png';
