@@ -9,7 +9,7 @@ const educationData = [
     degree: "Bachelor of Technology, Information Technology",
     university: "Seshadri Rao Gudlavalleru Engineering College",
     dates: "Aug 2022 - May 2026",
-    cgpa: "8.78 / 10.0",
+    cgpa: "8.80 / 10.0", 
     description: "Pursuing a Bachelor's degree in Information Technology with a focus on software development and data science.",
     courses: [
       "Data Structures & Algorithms",
