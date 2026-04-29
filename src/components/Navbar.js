@@ -7,6 +7,7 @@ function Navbar() {
       <a href="#home" className="nav-logo">Chalama Reddy Annapa Reddy</a>
       <ul className="nav-list">
         <li className="nav-item"><a href="#about">About</a></li>
+        <li className="nav-item"><a href="#experience">Experience</a></li>
         <li className="nav-item"><a href="#education">Education</a></li>
         <li className="nav-item"><a href="#skills">Skills</a></li>
         <li className="nav-item"><a href="#projects">Projects</a></li>

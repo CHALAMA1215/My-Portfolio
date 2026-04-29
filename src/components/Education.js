@@ -1,32 +1,24 @@
 import React from 'react';
 import './Education.css';
-// Import your education images
-import educationPic1 from '../assets/education-pic-1.png'; // <-- Update with your image names
-import educationPic2 from '../assets/education-pic-2.png'; // <-- Update with your image names
+import educationPic1 from '../assets/education-pic-1.png';
+import educationPic2 from '../assets/education-pic-2.png';
 
 const educationData = [
   {
     degree: "Bachelor of Technology, Information Technology",
     university: "Seshadri Rao Gudlavalleru Engineering College",
-    dates: "Aug 2022 - May 2026",
-    cgpa: "8.78 / 10.0",
+    dates: "Oct 2022 - Present",
+    cgpa: "8.78 CGPA",
     description: "Pursuing a Bachelor's degree in Information Technology with a focus on software development and data science.",
-    courses: [
-      "Data Structures & Algorithms",
-      "Web Development",
-      "Database Management Systems",
-      "Machine Learning"
-    ]
+    courses: []
   },
   {
-    degree: "Intermediate",
-    university: "Jawahar Navodaya Vidyalaya",
-    dates: "2020 - 2022",
-    cgpa: "9.10 / 10.0",
-    description: "Completed Intermediate education with a focus on Mathematics, Physics, and Chemistry.",
-    courses: [
-        "MPC"
-    ] 
+    degree: "Senior Secondary (MPC)",
+    university: "Jawahar Navodaya Vidyalaya, Krishna",
+    dates: "May 2021 - July 2022",
+    cgpa: "86%",
+    description: "Completed Senior Secondary education with a focus on Mathematics, Physics, and Chemistry.",
+    courses: []
   }
 ];
 
@@ -44,28 +36,18 @@ function Education() {
                 <p className="education-dates">{item.dates}</p>
                 {item.cgpa && (
                   <p className="education-cgpa">
-                    <strong>CGPA:</strong> {item.cgpa}
+                    <strong>Score:</strong> {item.cgpa}
                   </p>
                 )}
-                <p className="education-description">{item.description}</p> {/* Added description */}
-                {item.courses.length > 0 && (
-                  <div className="education-courses">
-                    <h4>Relevant Coursework:</h4>
-                    <ul>
-                      {item.courses.map((course, idx) => (
-                        <li key={idx}>{course}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <p className="education-description">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="education-right">
-          <div className="shape-dots-top-right"></div> {/* Top right dots */}
-          <div className="shape-orange-circle-large"></div> {/* Large orange circle */}
+          <div className="shape-dots-top-right"></div>
+          <div className="shape-orange-circle-large"></div>
           <img src={educationPic1} alt="Education 1" className="education-image-1" />
           <img src={educationPic2} alt="Education 2" className="education-image-2" />
         </div>

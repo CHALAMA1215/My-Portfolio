@@ -9,6 +9,10 @@
   --light-gray: #F9F9F9;
 }
 
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for navbar links */
+}
+
 body {
   margin: 0;
   /* 2. Apply the new font family to the entire site */

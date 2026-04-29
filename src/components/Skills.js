@@ -9,30 +9,30 @@ function Skills() {
         <div className="skill-category">
           <h3>LANGUAGES</h3>
           <ul>
-            <li>Python</li>
-            <li>Java</li>
+            <li>Python, Java, Groovy</li>
+            <li>Dart, JavaScript, C</li>
           </ul>
         </div>
         <div className="skill-category">
-          <h3>DEVELOPMENT</h3>
+          <h3>CLOUD & BACKEND</h3>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React</li>
+            <li>Azure, Spring Boot, Grails</li>
+            <li>Node.js, Express.js</li>
           </ul>
         </div>
         <div className="skill-category">
-          <h3>TOOLS</h3>
+          <h3>DATABASES</h3>
           <ul>
-            <li>GitHub</li>
-            <li>VS Code</li>
+            <li>MongoDB, MySQL</li>
+            <li>Elastic Search, Redis</li>
+            <li>Firebase (Firestore)</li>
           </ul>
         </div>
         <div className="skill-category">
-          <h3>SOFT SKILLS</h3>
+          <h3>FRONTEND & MOBILE</h3>
           <ul>
-            <li>Communication</li>
-            <li>Teamwork</li>
+            <li>ReactJS, HTML, CSS</li>
+            <li>Flutter</li>
           </ul>
         </div> 
       </div>
